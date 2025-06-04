@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/jvanderl
   gitUsername: jvanderl
   gitBranch: main
+- name: DemoLSD
+  gitServerName: NL_JL_Github
+  gitUrl: https://github.com/jvanderl
+  gitUsername: jvanderl
+  gitBranch: master
