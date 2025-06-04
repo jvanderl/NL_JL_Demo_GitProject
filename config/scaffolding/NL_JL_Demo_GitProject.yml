@@ -8,7 +8,23 @@ packages:
   gitUsername: jvanderl
   gitBranch: main
 - name: DemoLSD
+  version: "1.0"
   gitServerName: NL_JL_Github
   gitUrl: https://github.com/jvanderl
   gitUsername: jvanderl
   gitBranch: master
+services:
+- serviceName: project.nl_jl_demo_git.integrations:TestLSD
+  packages:
+  - name: NL_JL_Demo_GitProject
+    version: "1.0"
+  - name: DemoLSD
+    version: "1.0"
+- serviceName: demolsd:addints
+  packages:
+  - name: DemoLSD
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2043
